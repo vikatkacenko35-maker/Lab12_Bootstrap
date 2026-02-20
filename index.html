@@ -215,5 +215,35 @@ false
 );
 })();
 </script>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Мое портфолио</h2>
+        <div class="text-center mb-4">
+            <div class="btn-group" role="group">
+                <button class="btn btn-outline-primary" onclick="filterGallery('all')">Все</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('web')">Вeб-дизайн</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('photo')">Фотография</button>
+                <button class="btn btn-outline-primary" onclick="filterGallery('graphic')">Графика</button>
+            </div>
+            
+        </div>
+        <div class="row g-3" id="gallery">
+ <!-- Карточка 1 - Веб-дизайн -->
+ <div class="col-6 col-md-4 gallery-item" data-category="web">
+ <div class="card h-100">
+ <img src="https://placeholder.apptor.studio/400/300/website.png"
+ class="card-img-top" alt="Веб-проект">
+ <div class="card-body p-2">
+ <h6 class="card-title mb-0">Корпоративный сайт</h6>
+ <small class="text-muted">Веб-дизайн</small>
+ </div>
+ </div>
+ </div>
+ <!-- TODO: Скопируйте блок выше и создайте ещё 5 карточек -->
+ <!-- Категории: web, photo, photo, graphic, web, graphic -->
+ <!-- Измените изображения и названия -->
+</div>
+    </div>
+</body>
 </body>
 </html>
