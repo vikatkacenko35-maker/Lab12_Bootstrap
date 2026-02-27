@@ -1,68 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="custom.css">
-    <link rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    <div class="container my-5">
-        <h2 class="text-center mb-5">Моя История</h2>
-        <!-- Временная шкала -->
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="badge bg-primary mb-2"><i class="bi bi-mortarboard-fill"></i> 2023</span>
-                    <h5>Поступление в университет</h5>
-                    <p class="text-muted">
-                    Начала изучать веб-разработку и программирование
-                    </p>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MyPortfolio</a>
+            <!-- Кнопка для мобильного меню -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Пункты меню -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero секция -->
+    <div class="container-fluid bg-light py-5" id="home">
+        <div class="container text-center">
+            <h1 class="display-4">Я вас удивлю!</h1>
+            <p class="lead">Это мое портфолио, созданное с помощью Bootstrap</p>
+            <button class="btn btn-warning btn-lg">Это интересно</button>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">O себе</h2>
+        <div class="text-center mb-4">
+            <div class="row g-3" id="gallery">
+                <!-- Карточка 1 - Веб-дизайн -->
+                <div class="col-6 col-md-4 gallery-item" data-category="web">
+                    <div class="card h-100">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Macaca_nigra_self-portrait_large.jpg/250px-Macaca_nigra_self-portrait_large.jpg"
+                            class="card-img-top" alt="Веб-проект">
+                        <div class="card-body p-2">
+                            <h6 class="card-title mb-0">Ткаченко Виктория</h6>
+                            <small class="text-muted">Программист</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="p-4 bg-warning text-black rounded">
+                        <h4>Это я</h4>
+                        <p>Супер крутая, ниче не успеваю, в маке как торпеда гоняю, на вождениии бабок сбиваю, в рифму
+                            все писать умудряю(сь)!</p>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item timeline-item-left">
-                <div class="timeline-content">
- 
-                 <span class="badge bg-success mb-2"><i class="bi-code-slash"></i> 2024</span>
-                    <h5>Сотый код на Python</h5>
-                    <p class="text-muted">
-                    Углубленное изучение программирования
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="badge bg-warning text-dark mb-2"><i class="bi-trophy-fill"></i> 2025</span>
-                    <h5>Первый веб-сайт</h5>
-                    <p class="text-muted">
-                    Создала первый сайт на HTML и CSS
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-item timeline-item-left">
-                <div class="timeline-content">
-                 <span class="badge bg-danger mb-2"><i class="bi-briefcase-fill"></i> 2026</span>
-                    <h5>Профессиональная работа с HTML</h5>
-                    <p class="text-muted">
-                    Создала свой сотый сайт на HTML и CSS
-                    </p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <span class="badge bg-primary mb-2"><i class="bi-heart-fill"></i> 2027</span>
-                    <h5>Окончание университета</h5>
-                    <p class="text-muted">
-                    Полученние диплома о среднем проф. образовании
-                    </p>
+
+        </div>
+
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Услуги</h2>
+            <div class="text-center mb-4">
+                <div class="row g-3" id="gallery">
+                    <div class="col-6 col-md-4 gallery-item" data-category="web">
+                        <div class="card h-100">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4Djy9G9oVCyrZTEO8Dbhzzq3WaT9NkFAoA&s"
+                                class="card-img-top" alt="Веб-проект">
+                            <div class="card-body p-2">
+                                <h6 class="card-title mb-0">Написание кода</h6>
+                                <small class="text-muted">Python, C#, HTML</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 gallery-item" data-category="web">
+                        <div class="card h-100">
+                            <img src="https://i.pinimg.com/736x/39/44/ce/3944ce5506101d22641fa74e676a0021.jpg"
+                                class="card-img-top" alt="Веб-проект">
+                            <div class="card-body p-2">
+                                <h6 class="card-title mb-0">Дизайн</h6>
+                                <small class="text-muted">Сайта, презентации, поста</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 gallery-item" data-category="web">
+                        <div class="card h-100">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEmE4Z-AUFFcHy3isviTVFUyelJHABGQ8uA&s"
+                                class="card-img-top" alt="Веб-проект">
+                            <div class="card-body p-2">
+                                <h6 class="card-title mb-0">Моральная поддержка</h6>
+                                <small class="text-muted">Помогу, чем смогу</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
- </div>
+        <div class="container my-5">
+            <h2 class="text-center mb-5">Моя История</h2>
+            <!-- Временная шкала -->
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge bg-primary mb-2"><i class="bi bi-mortarboard-fill"></i> 2023</span>
+                        <h5>Поступление в университет</h5>
+                        <p class="text-muted">
+                            Начала изучать веб-разработку и программирование
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+
+                        <span class="badge bg-success mb-2"><i class="bi-code-slash"></i> 2024</span>
+                        <h5>Сотый код на Python</h5>
+                        <p class="text-muted">
+                            Углубленное изучение программирования
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge bg-warning text-dark mb-2"><i class="bi-trophy-fill"></i> 2025</span>
+                        <h5>Первый веб-сайт</h5>
+                        <p class="text-muted">
+                            Создала первый сайт на HTML и CSS
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-item-left">
+                    <div class="timeline-content">
+                        <span class="badge bg-danger mb-2"><i class="bi-briefcase-fill"></i> 2026</span>
+                        <h5>Профессиональная работа с HTML</h5>
+                        <p class="text-muted">
+                            Создала свой сотый сайт на HTML и CSS
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="badge bg-primary mb-2"><i class="bi-heart-fill"></i> 2027</span>
+                        <h5>Окончание университета</h5>
+                        <p class="text-muted">
+                            Полученние диплома о среднем проф. образовании
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>
-   
