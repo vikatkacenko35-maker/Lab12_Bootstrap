@@ -48,7 +48,7 @@
             <button class="btn btn-warning btn-lg">Это интересно</button>
         </div>
     </div>
-    <div class="container mt-5">
+    <div class="container mt-5" id="about">
         <h2 class="text-center mb-4">O себе</h2>
         <div class="text-center mb-4">
             <div class="row g-3" id="gallery">
@@ -74,7 +74,7 @@
 
         </div>
 
-        <div class="container mt-5">
+        <div class="container mt-5" id = "services">
             <h2 class="text-center mb-4">Услуги</h2>
             <div class="text-center mb-4">
                 <div class="row g-3" id="gallery">
@@ -83,7 +83,7 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4Djy9G9oVCyrZTEO8Dbhzzq3WaT9NkFAoA&s"
                                 class="card-img-top" alt="Веб-проект">
                             <div class="card-body p-2">
-                                <h6 class="card-title mb-0">Написание кода</h6>
+                                <h6 class="card-title mb-0">Написание кода<i class="bi bi-check2-all"></i></h6>
                                 <small class="text-muted">Python, C#, HTML</small>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                             <img src="https://i.pinimg.com/736x/39/44/ce/3944ce5506101d22641fa74e676a0021.jpg"
                                 class="card-img-top" alt="Веб-проект">
                             <div class="card-body p-2">
-                                <h6 class="card-title mb-0">Дизайн</h6>
+                                <h6 class="card-title mb-0">Дизайн<i class="bi bi-check2-all"></i></h6>
                                 <small class="text-muted">Сайта, презентации, поста</small>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEEmE4Z-AUFFcHy3isviTVFUyelJHABGQ8uA&s"
                                 class="card-img-top" alt="Веб-проект">
                             <div class="card-body p-2">
-                                <h6 class="card-title mb-0">Моральная поддержка</h6>
+                                <h6 class="card-title mb-0">Моральная поддержка<i class="bi bi-check2-all"></i></h6>
                                 <small class="text-muted">Помогу, чем смогу</small>
                             </div>
                         </div>
@@ -111,6 +111,159 @@
                 </div>
             </div>
         </div>
+        <div class="container my-5">
+<h2 class="text-center mb-5">Наши проекты</h2>
+<div class="row g-3">
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="card border-0">
+<img
+src="img/step3_gridDesktopLab12_Tkachenko.png"
+class="card-img-top img-fluid rounded"
+alt="Проект 1"
+/>
+<div class="card-body">
+<h5 class="card-title">Grid System</h5>
+<p class="card-text text-muted">
+многофункциональная разметка
+</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="card border-0">
+<img
+src="img/step2_bootstrapConnectionLab12_Tkachenko.png"
+class="card-img-top img-fluid rounded"
+alt="Проект 2"
+/>
+<div class="card-body">
+<h5 class="card-title">Начальная страница</h5>
+<p class="card-text text-muted">
+красивое оформлене для ваших сайтов
+</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="card border-0">
+<img
+src="img/step8_modalLab13_Tkachenko.png"
+class="card-img-top img-fluid rounded"
+alt="Проект 3"
+/>
+<div class="card-body">
+<h5 class="card-title"> Работа с всплывающими окнами</h5>
+<p class="card-text text-muted">Приложение для приветствия</p>
+</div>
+</div>
+</div>
+<div class="col-12 col-sm-6 col-lg-4">
+<div class="card border-0">
+<img
+src="img/gitPushLab12_Bootstrap_Tkachenko.png"
+class="card-img-top img-fluid rounded"
+alt="Проект 4"
+/>
+<div class="card-body">
+<h5 class="card-title">Работа с Git-ом</h5>
+<p class="card-text text-muted">Панель управления аналитикой</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+    <!-- Секция с формой -->
+<div class="container my-5" id="contact">
+<div class="row justify-content-center">
+<div class="col-lg-6">
+<h2 class="text-center mb-4">Свяжитесь с нами</h2>
+<form id="contactForm" class="needs-validation" novalidate>
+<!-- Имя -->
+<div class="mb-3">
+<label for="name" class="form-label">Имя</label>
+<input
+type="text"
+class="form-control"
+id="name"
+placeholder="Введите ваше имя"
+required
+/>
+<div class="invalid-feedback">Пожалуйста, введите ваше имя</div>
+</div>
+<!-- Email -->
+<div class="mb-3">
+<label for="email" class="form-label">Email</label>
+<input
+type="email"
+class="form-control"
+id="email"
+placeholder="name@example.com"
+required
+/>
+<div class="invalid-feedback">
+Пожалуйста, введите корректный email
+</div>
+</div>
+<!-- Сообщение -->
+<div class="mb-3">
+<label for="message" class="form-label">Сообщение</label>
+<textarea
+class="form-control"
+id="message"
+rows="4"
+placeholder="Ваше сообщение"
+required
+></textarea>
+<div class="invalid-feedback">Пожалуйста, введите сообщение</div>
+</div>
+<!-- Checkbox -->
+<div class="mb-3 form-check">
+<input
+type="checkbox"
+class="form-check-input"
+id="agree"
+required
+/>
+<label class="form-check-label" for="agree">
+Я согласен с политикой конфиденциальности
+</label>
+<div class="invalid-feedback">
+Вы должны согласиться с условиями
+</div>
+</div>
+<!-- Кнопка отправки -->
+<div class="d-grid">
+<button type="submit" class="btn btn-warning btn-lg">
+Отправить сообщение
+</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+// Валидация формы Bootstrap
+(function () {
+"use strict";
+const form = document.getElementById("contactForm");
+form.addEventListener(
+"submit",
+function (event) {
+if (!form.checkValidity()) {
+event.preventDefault();
+event.stopPropagation();
+} else {
+event.preventDefault();
+alert("Форма успешно отправлена!");
+form.reset();
+form.classList.remove("was-validated");
+}
+form.classList.add("was-validated");
+},
+false
+);
+})();
+</script>
+
         <div class="container my-5">
             <h2 class="text-center mb-5">Моя История</h2>
             <!-- Временная шкала -->
@@ -163,6 +316,41 @@
                 </div>
             </div>
         </div>
+        <!-- Футер -->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-md-4 mb-4">
+<h5>Еще раз обо мне</h5>
+<p>
+Волков бояться, в лесу не кодить, поэтому я берусь за любого вида работу.
+</p>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Быстрые ссылки</h5>
+<ul class="list-unstyled">
+<li><a href="#home">Главная</a></li>
+<li><a href="#services">Услуги</a></li>
+<li><a href="#about">Проекты</a></li>
+<li><a href="#contact">Контакты</a></li>
+</ul>
+</div>
+<div class="col-md-4 mb-4">
+<h5>Контакты</h5>
+<ul class="list-unstyled">
+<li>Email: vikatkacenko35@gmail.com</li>
+<li>Телефон: +7 (999) 123-45-67</li>
+<li>Адрес: Волжский, ул. Пушкина, д. Колотушкино</li>
+</ul>
+</div>
+</div>
+<hr style="border-color: rgba(255, 255, 255, 0.1)" />
+<div class="text-center mt-3">
+<p class="mb-0">&copy; 2026 MyPortfolio. Все права защищены.</p>
+<p class="mb-0 text-muted">Создано с помощью Bootstrap 5</p>
+</div>
+</div>
+</footer>
 </body>
 
 </html>
